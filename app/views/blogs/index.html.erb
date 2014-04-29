@@ -1,3 +1,10 @@
-<p class="label label-default">
-  Add blogs here
-</p>
+<% @blogs.each do |blog| %>
+  <div class="blog-container">
+    <h3 class="title">
+      <%= blog.title %>
+    </h3>
+    <div class="body">
+      <%= blog.text %>
+    </div>
+  </div>
+<% end %>
