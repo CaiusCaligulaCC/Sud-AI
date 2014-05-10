@@ -1,10 +1,10 @@
 <% @blogs.each do |blog| %>
-  <div class="blog-container">
-    <h3 class="title">
-      <%= blog.title %>
+  <div class="well blog-container">
+    <h3>
+      <%= link_to blog.title, blog_path(blog) %>
     </h3>
-    <div class="body">
-      <%= blog.text %>
-    </div>
+    <p>
+      <%= blog.text.html_safe %>
+    </p>
   </div>
 <% end %>
