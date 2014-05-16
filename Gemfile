@@ -42,8 +42,8 @@ gem 'spring',        group: :development
 gem 'twitter-bootstrap-rails',
     :github => 'seyhunak/twitter-bootstrap-rails',
     :branch => 'bootstrap3'
-gem "therubyracer"
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'therubyracer'
+gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 
 # Use toastr- a JQuery Popup Library
 gem 'toastr-rails'
@@ -54,3 +54,10 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'polyamorous', github: 'activerecord-hackery/polyamorous'
 gem 'ransack',     github: 'activerecord-hackery/ransack'
 gem 'formtastic',  github: 'justinfrench/formtastic'
+
+# Useful for uploading images
+gem 'carrierwave'
+# needed by ckeditor for carrierwave-integration
+gem 'mini_magick'
+# A WYSIWYG-editor
+gem 'ckeditor'
