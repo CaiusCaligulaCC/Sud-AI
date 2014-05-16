@@ -1,0 +1,11 @@
+<div class="well sidebar-nav">
+  <!-- <h3>Zuletzt gepostet</h3> -->
+  <ul class="nav nav-list">
+    <li class="nav-header">Zuletzt gepostet</li>
+    <li>
+      <% @recent_blogs.each do |blog| %>
+        <%= link_to blog.title, blog_path(blog) %>
+      <% end %>
+    </li>
+  </ul>
+</div>
