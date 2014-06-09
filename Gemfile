@@ -60,4 +60,6 @@ gem 'carrierwave'
 # needed by ckeditor for carrierwave-integration
 gem 'mini_magick'
 # A WYSIWYG-editor
-gem 'ckeditor'
+gem 'ckeditor', github: 'galetahub/ckeditor'
+# Needed by ckeditor
+gem 'non-stupid-digest-assets'

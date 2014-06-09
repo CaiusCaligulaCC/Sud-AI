@@ -12,6 +12,6 @@
  *
  *= require bootstrap_and_overrides
  *= require_self
- *= require bootstrap-theme-darkly
+ *= require bootstrap-theme-lumen
  *= require blogs
  */

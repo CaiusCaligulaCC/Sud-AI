@@ -10,7 +10,12 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//ACTIVEADMIN:
+//the active-admin js file is in vendor/assets/javascripts.
+//This avoids a conflict between bootstrap and activeadmin.
+//
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require twitter/bootstrap
+

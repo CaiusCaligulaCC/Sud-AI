@@ -17,6 +17,14 @@ GIT
       polyamorous (~> 1.0.0)
 
 GIT
+  remote: git://github.com/galetahub/ckeditor.git
+  revision: 84ef6a7e3ee83f0d3f326432f44b2464ee16a5da
+  specs:
+    ckeditor (4.0.11)
+      mime-types
+      orm_adapter (~> 0.5.0)
+
+GIT
   remote: git://github.com/gregbell/active_admin.git
   revision: a460d8d2ab37820c6ac377f4a75fe90b203520d0
   specs:
@@ -94,9 +102,6 @@ GEM
       activesupport (>= 3.2.0)
       json (>= 1.7)
       mime-types (>= 1.16)
-    ckeditor (4.0.11)
-      mime-types
-      orm_adapter (~> 0.5.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -147,6 +152,7 @@ GEM
       subexec (~> 0.2.1)
     minitest (5.3.3)
     multi_json (1.9.3)
+    non-stupid-digest-assets (1.0.4)
     orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.4)
@@ -221,13 +227,14 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   carrierwave
-  ckeditor
+  ckeditor!
   coffee-rails (~> 4.0.0)
   formtastic!
   jbuilder (~> 2.0)
   jquery-rails
   less-rails
   mini_magick
+  non-stupid-digest-assets
   pg
   polyamorous!
   rails (= 4.1.0)
