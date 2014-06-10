@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  # resources :blogs
+  resources :blogs
 
-  # root "blogs#index"
+  root "blogs#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -62,5 +62,5 @@ Rails.application.routes.draw do
   comfy_route :cms_admin, :path => '/admin'
 
   # Make sure this routeset is defined last
-  comfy_route :cms, :path => '/cms', :sitemap => false
+  comfy_route :cms, :path => '/', :sitemap => false
 end
