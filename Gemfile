@@ -49,3 +49,5 @@ gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 gem 'toastr-rails'
 
 gem 'comfortable_mexican_sofa', '~> 1.12.1'
+
+gem 'comfy_blog', '~> 1.12.0'
