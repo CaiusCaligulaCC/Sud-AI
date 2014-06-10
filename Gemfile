@@ -48,18 +48,4 @@ gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 # Use toastr- a JQuery Popup Library
 gem 'toastr-rails'
 
-# Use ActiveAdmin for the admin-interface
-gem 'activeadmin', github: 'gregbell/active_admin'
-# Additional dependencies of ActiveAdmin
-gem 'polyamorous', github: 'activerecord-hackery/polyamorous'
-gem 'ransack',     github: 'activerecord-hackery/ransack'
-gem 'formtastic',  github: 'justinfrench/formtastic'
-
-# Useful for uploading images
-gem 'carrierwave'
-# needed by ckeditor for carrierwave-integration
-gem 'mini_magick'
-# A WYSIWYG-editor
-gem 'ckeditor', github: 'galetahub/ckeditor'
-# Needed by ckeditor
-gem 'non-stupid-digest-assets'
+gem 'comfortable_mexican_sofa', '~> 1.12.1'

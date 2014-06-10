@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
-  mount Ckeditor::Engine => '/ckeditor'
-  resources :blogs
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
+  # resources :blogs
 
-  root "blogs#index"
+  # root "blogs#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -61,4 +58,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  #
+  comfy_route :cms_admin, :path => '/admin'
+
+  # Make sure this routeset is defined last
+  comfy_route :cms, :path => '/cms', :sitemap => false
 end
